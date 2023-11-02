@@ -14,7 +14,6 @@ class TensorBuilder():
     def __init__(self):
         return None
 
-    
     @staticmethod
     def allzeros(size: (int, int)):
         return torch.zeros(size)
