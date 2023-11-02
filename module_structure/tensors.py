@@ -1,30 +1,20 @@
-#!/usr/bin/env python
 # coding: utf-8
 
-# In[105]:
-
-
 import torch
-
-
-# In[106]:
-
 
 """
 This module is designed around 2D tensors, as per the assignment's instructions
 """
 
-
-# In[107]:
-
-
 __all__ = ["TensorCalculator", "TensorBuilder"]
 
 
-# In[108]:
+class TensorBuilder():
 
+    def __init__(self):
+        return None
 
-class TensorBuilder:
+    
     @staticmethod
     def allzeros(size: (int, int)):
         return torch.zeros(size)
@@ -38,10 +28,10 @@ class TensorBuilder:
         return torch.rand(size)
 
 
-# In[124]:
+class TensorCalculator():
 
-
-class TensorCalculator:
+    def __init__(self):
+        return None
     
     @staticmethod
     def tensorsum(tensor1, tensor2):
@@ -52,6 +42,10 @@ class TensorCalculator:
     
     @staticmethod
     def tensormult(tensor1, tensor2):
+        """
+        tensormult will first try to multiply the first tensor with the second one, but if it's unable to, it'll 
+        first try to swap the order (multiply the second tensor with the first one) before raising and error
+        """
         if tensor1.size()[1] == tensor2.size()[0]:
             return torch.matmul(tensor1, tensor2)
         elif tensor1.size()[0] == tensor2.size()[1]:
