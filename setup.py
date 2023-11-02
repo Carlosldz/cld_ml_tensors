@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct  4 15:54:58 2022
+Created on Tue Oct  24 22:45:32 2023
 A brief comment just to modify the file
-@author: PedroAnquela
+@author: CarlosLinares
 """
 
 from setuptools import setup, find_packages
@@ -18,7 +18,7 @@ setup(
     version                 = VERSION,
     description             = 'Brief description of your package',
     author                  = AUTHOR,
-    author_email            = 'pedro.anquela@ufv.es',
+    author_email            = '9004335@alumnos.ufv.es',
     license                 = 'MIT',
     python_requires         = '>=3.9.5',
     packages                = find_packages(),
