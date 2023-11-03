@@ -1,6 +1,6 @@
 # module_structure
 
-This module has two main objects, a TensorBuilder class and a TensorCalculator class, made to work with 2D tensors. The reason why it's divided into two is so that they can be further expanded while remaining a specific functionality. Neither of these has a fleshed out constructor in order to make this module work similarly to other popular modules such as numpy and pandas. This means that you will only need one instance of the classes active at any time, but you'll need to input the arguments on every call.
+This module has two main objects, a TensorBuilder class and a TensorCalculator class, made to work with 2D tensors. The reason why it's divided into two is so that they can be further expanded while retaining a specific functionality. Neither of these has a fleshed out constructor in order to make this module work similarly to other popular modules such as numpy and pandas. This means that you will only need one instance of the classes active at any time, but you'll need to input the arguments on every call.
 
 TensorBuilder is initially made of three methods:
 - Allzeros
